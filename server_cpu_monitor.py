@@ -16,6 +16,7 @@ def CPUinfo():
 				#end of the processor
 				CPUinfo['proc%s' %nprocs]=procinfo
 				nprocs=nprocs+1
+				#reset the auto-variable
 				procinfo=OrderedDict()
 			else:
 				if len(line.split(':'))==2:
